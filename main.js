@@ -2,7 +2,7 @@
 // Version: 1.0 Beta
 // FireLink uses a serverless api to effortessly create shortened links.
 
-var endpoint = "https://www.jsonstore.io/8ba4fd855086288421f770482e372ccb5a05d906269a34da5884f39eed0418a1";
+var endpoint = "https://jsonbox.io/box_e5a77f471ae3db7bf82b";
 
 function geturl(){
     var url = document.getElementById("urlinput").value;
