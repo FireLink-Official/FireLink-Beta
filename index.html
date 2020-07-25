@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Unlimited short links for free, forever.">
+    <meta name="keywords" content="Fire Link">
+    <meta name="site_name" content="Fire Link">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Link</title>
+    <link rel="stylesheet" href="app/css/main.css">
+    <link rel="stylesheet" href="app/css/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="app/images/icon.png">
+    <script src="app/javascript/head.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <a href="#">
+            <img src="app/images/logo-blue.png" alt="" class="nav-logo">
+        </a>
+        <ul class="nav-container">
+            <li class="nav-option">
+                <a href="#" class="nav-link nav-link_eb2fc8">Donate</a>
+            </li>
+            <li class="nav-option">
+                <a href="#" class="nav-link nav-link_f24f44">Fire CDN</a>
+            </li>
+            <li class="nav-option">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-option" style="margin: 0px;">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+        <label for="nav-open">
+            <i class="nav-open-icon material-icons" onclick="document.getElementsById('nav').style.boxShadow = 'none';">menu</i>
+        </label>
+        <input type="checkbox" id="nav-open">
+        <ul class="nav-container-mobile">
+            <li class="nav-option">
+                <a href="#" class="nav-link nav-link_eb2fc8">Donate</a>
+            </li>
+            <li class="nav-option">
+                <a href="#" class="nav-link nav-link_f24f44">Fire CDN</a>
+            </li>
+            <li class="nav-option">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-option" style="margin: 0px;">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="app">
+        <h1 class="title">Shorten A URL</h1>
+        <input type="url" id="longURLInput" placeholder="Paste Your URL">
+        <p class="text-url-alert">Make Sure To Include, HTTP://, HTTPS://, etc.</p>
+        <input type="text" maxlength=20 id="custominput" placeholder="Custom URL">
+        <br>
+        <button id="startEngineButton" type="button">Shorten</button>
+        <p id="outputMessage"></p>
+        <br>
+        <input type="text" id="shortenedURL" placeholder="Your New URL Will Appear Here...">
+        <p id="completeOutput"></p>
+        <a id="completeOutputDonate" href="donate" class="complete-output-donate">Consider Donating.</a>
+    </div>
+    <script src="app/javascript/index.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
