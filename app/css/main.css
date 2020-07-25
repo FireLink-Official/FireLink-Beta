@@ -132,6 +132,10 @@ label[for = "nav-open"]{
         margin-top: -140px;
         margin-right: -15px;
     }
+
+    .nav-open-icon{
+        margin-right: 25px;
+    }
 }
 
 label[for = "nav-open"]{
