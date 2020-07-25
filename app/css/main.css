@@ -336,11 +336,13 @@ label[for = "nav-open"]{
         width: 35vh;
         margin-left: auto;
         margin-right: auto;
+        -webkit-appearance: none;
     }
 
     #shortenedURL{
         font-size: 14px;
         width: 35vh;
+        -webkit-appearance: none;
     }
 
     .app{
