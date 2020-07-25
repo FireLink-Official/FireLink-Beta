@@ -130,6 +130,7 @@ label[for = "nav-open"]{
     label[for = "nav-open"]{
         display: block;
         margin-top: -140px;
+        margin-right: -15px;
     }
 }
 
