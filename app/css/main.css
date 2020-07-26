@@ -138,6 +138,7 @@ body{
     color: #e83e8c;
     font-size: 2.2vh;
     font-weight: 400;
+    display: block;
 }
 
 #completeOutputDonate:hover{
