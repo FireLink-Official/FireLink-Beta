@@ -100,10 +100,13 @@ let send_request = (url) => {
     pushJSON(address, longurl, shorturl);
 
     document.getElementById('shortenedURL').value = window.location.href;
-    document.getElementById('completeOutput').innerHTML = "URL Copied To Clipboard.";
+    document.getElementById('completeOutput').innerHTML = "Link Copied To Clipboard.";
+    document.getElementById('completeOutputDonate').innerHTML = "Consider Donating!";
     document.getElementById('completeOutputDonate').style.opacity = '1';
     document.getElementById('completeOutputDonate').style.transform = 'translateY(0px)';
     document.getElementById('completeOutputDonate').style.marginTop = '15px';
+    document.getElementById('shortenedURL').style.display = 'block';
+    document.getElementById('shortenedURL').style.marginTop = '25px';
     copyer("shortenedURL");
 };
 
@@ -114,7 +117,8 @@ let shorturl = () => {
     let protocol_ok = re.test(longurl);
     if (!protocol_ok) {
         document.getElementById("outputMessage").style.color = "#eb4034";
-        document.getElementById("outputMessage").innerHTML = "Invalid URL";
+        document.getElementById("outputMessage").innerHTML = "Invalid Link";
+        document.getElementById("outputMessage").style.marginTop = "45px";
     } else {
         document.getElementById("outputMessage").innerHTML = "";
         if (document.getElementById("custominput").value == "") {
